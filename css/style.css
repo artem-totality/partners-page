@@ -1393,6 +1393,10 @@ body {
 .header {
   border-bottom: 2px solid rgba(250, 240, 181, 0.5);
 }
+.header *::selection {
+  color: #000000;
+  background-color: #faf0b5;
+}
 .header__inner {
   display: flex;
   height: 120px;
@@ -1436,6 +1440,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+.main__title::selection {
+  color: #000000;
+  background-color: #faf0b5;
+}
 
 .card {
   position: relative;
@@ -1457,6 +1465,16 @@ body {
   font-weight: 700;
 }
 
+#typing-area::selection,
+.typed-cursor::selection {
+  color: #000000;
+  background-color: #faf0b5;
+}
+
+.roles *::selection {
+  color: #000000;
+  background-color: #faf0b5;
+}
 .roles__inner {
   padding: 35px 0;
 }
@@ -1498,6 +1516,10 @@ body {
   line-height: 30px;
 }
 
+.contacts *::selection {
+  color: #000000;
+  background-color: #faf0b5;
+}
 .contacts__inner {
   padding: 35px 0 120px;
 }
@@ -1580,6 +1602,10 @@ body {
 
 .footer {
   border-top: 2px solid rgba(250, 240, 181, 0.5);
+}
+.footer *::selection {
+  color: #000000;
+  background-color: #faf0b5;
 }
 .footer__inner {
   display: flex;

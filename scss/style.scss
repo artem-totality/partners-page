@@ -5,6 +5,9 @@
 
 .header {
 	border-bottom: 2px solid $shady-main-color;
+	* {
+		@include selection;
+	}
 	&__inner {
 		display: flex;
 		height: 120px;
@@ -49,6 +52,7 @@
 	&__title {
 		font-size: 180px;
 		@include title-font;
+		@include selection;
 	}
 }
 
@@ -68,7 +72,15 @@
 	@include title-font;
 }
 
+#typing-area,
+.typed-cursor {
+	@include selection;
+}
+
 .roles {
+	* {
+		@include selection;
+	}
 	&__inner {
 		padding: 35px 0;
 	}
@@ -105,12 +117,14 @@
 	}
 	&__info {
 		font-size: 20px;
-
 		line-height: 30px;
 	}
 }
 
 .contacts {
+	* {
+		@include selection;
+	}
 	&__inner {
 		padding: 35px 0 120px;
 	}
@@ -183,6 +197,9 @@
 }
 
 .footer {
+	* {
+		@include selection;
+	}
 	border-top: 2px solid $shady-main-color;
 	&__inner {
 		display: flex;

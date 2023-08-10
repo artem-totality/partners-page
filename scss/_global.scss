@@ -63,10 +63,18 @@ body {
 	font-weight: 700;
 }
 
+@mixin selection {
+	&::selection {
+		color: $black;
+		background-color: $main-color;
+	}
+}
+
 @mixin section-title {
 	padding: 170px 0 56px;
 	font-size: 64px;
 	@include title-font;
+	// @include selection;
 }
 
 @mixin element-decor {
@@ -83,13 +91,6 @@ body {
 @mixin focus-color-hover {
 	&:hover {
 		color: $focus-color;
-	}
-}
-
-@mixin selection {
-	&::selection {
-		color: $black;
-		background-color: $main-color;
 	}
 }
 
