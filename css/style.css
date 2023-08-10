@@ -67,7 +67,7 @@ body {
 }
 
 .header {
-  border-bottom: 2px solid #faf0b5;
+  border-bottom: 2px solid rgba(250, 240, 181, 0.5);
 }
 .header__inner {
   display: flex;
@@ -75,8 +75,16 @@ body {
   align-items: center;
 }
 
+.logo svg {
+  width: 55px;
+  height: 55px;
+  vertical-align: -36%;
+}
 .logo__title {
-  font-size: 28px;
+  margin-left: 8px;
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .menu {
@@ -167,7 +175,7 @@ body {
 }
 
 .contacts__inner {
-  padding: 35px 0;
+  padding: 35px 0 120px;
 }
 .contacts__title {
   padding: 170px 0 56px;
@@ -180,6 +188,9 @@ body {
   line-height: 37px;
 }
 
+.footer {
+  border-top: 2px solid rgba(250, 240, 181, 0.5);
+}
 .footer__inner {
   display: flex;
   padding: 160px 0 120px;
@@ -191,4 +202,9 @@ body {
 }
 .footer__inner div {
   width: calc(50% - 20px);
+}
+.footer__link svg {
+  width: 36px;
+  height: 36px;
+  vertical-align: -36%;
 }
