@@ -1,0 +1,100 @@
+@import 'variables';
+@import 'scroll';
+@import 'global';
+
+.header {
+	border-bottom: 2px solid $main-color;
+	&__inner {
+		display: flex;
+		height: 120px;
+		align-items: center;
+	}
+}
+
+.logo {
+	&__title {
+		font-size: 28px;
+	}
+}
+
+.menu {
+	height: 100%;
+	margin-left: auto;
+	&__list {
+		display: flex;
+		height: 100%;
+		align-items: stretch;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+	&__item + .menu__item {
+		margin-left: 40px;
+	}
+}
+
+.main {
+	&__inner {
+		padding: 35px 0;
+	}
+	&__title {
+		font-size: 180px;
+		@include title-font;
+	}
+}
+
+.card {
+	position: relative;
+	padding: 40px 48px;
+	backdrop-filter: blur(6px);
+	background: rgba(238, 237, 228, 0.02);
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	&--main {
+		margin-top: -48px;
+	}
+}
+
+.typing-area {
+	min-height: 620px;
+	padding: 56px 48px;
+	font-size: 88px;
+}
+
+.roles {
+	&__inner {
+		padding: 35px 0;
+	}
+	&__title {
+		@include section-title;
+	}
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px;
+		.card {
+			width: calc(50% - 12px);
+		}
+	}
+}
+
+.role {
+	&__title {
+		margin-bottom: 18px;
+		font-size: 36px;
+		@include title-font;
+	}
+	&__info {
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 30px;
+	}
+}
+
+.contacts {
+	&__title {
+		@include section-title;
+	}
+}
+
+@import 'media';

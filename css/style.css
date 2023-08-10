@@ -1,0 +1,159 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+}
+
+input,
+select,
+option,
+textarea,
+button {
+  font-family: Roboto;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 20px;
+  color: #faf0b5;
+  background-color: #000000;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.svg-sprite {
+  display: none;
+}
+
+.header {
+  border-bottom: 2px solid #faf0b5;
+}
+.header__inner {
+  display: flex;
+  height: 120px;
+  align-items: center;
+}
+
+.logo__title {
+  font-size: 28px;
+}
+
+.menu {
+  height: 100%;
+  margin-left: auto;
+}
+.menu__list {
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+}
+.menu__item + .menu__item {
+  margin-left: 40px;
+}
+
+.main__inner {
+  padding: 35px 0;
+}
+.main__title {
+  font-size: 180px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.card {
+  position: relative;
+  padding: 40px 48px;
+  backdrop-filter: blur(6px);
+  background: rgba(238, 237, 228, 0.02);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.card--main {
+  margin-top: -48px;
+}
+
+.typing-area {
+  min-height: 620px;
+  padding: 56px 48px;
+  font-size: 88px;
+}
+
+.roles__inner {
+  padding: 35px 0;
+}
+.roles__title {
+  padding: 210px 0 56px;
+  font-size: 64px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.roles__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.roles__content .card {
+  width: calc(50% - 12px);
+}
+
+.role__title {
+  margin-bottom: 18px;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.role__info {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.contacts__title {
+  padding: 210px 0 56px;
+  font-size: 64px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
