@@ -1,26 +1,26 @@
 @import 'variables';
 
 @mixin customize-scroll {
-  &::-webkit-scrollbar {
-    width: 8px;
-    background-color: transparent;
-  }
+	&::-webkit-scrollbar {
+		width: 8px;
+		background-color: transparent;
+	}
 
-  &::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    background-color: $border-color;
-  }
+	&::-webkit-scrollbar-thumb {
+		border-radius: 8px;
+		background-color: $shady-main-color;
+	}
 
-  &::-webkit-scrollbar-track {
-    border-radius: 8px;
-    background-color: transparent;
-  }
+	&::-webkit-scrollbar-track {
+		border-radius: 8px;
+		background-color: transparent;
+	}
 
-  &::-webkit-scrollbar {
-    width: 0;
-  }
+	&::-webkit-scrollbar {
+		width: 0;
+	}
 
-  &:hover::-webkit-scrollbar {
-    width: 8px;
-  }
+	&:hover::-webkit-scrollbar {
+		width: 8px;
+	}
 }

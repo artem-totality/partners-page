@@ -3,7 +3,7 @@
 @import 'global';
 
 .header {
-	border-bottom: 2px solid $border-color;
+	border-bottom: 2px solid $shady-main-color;
 	&__inner {
 		display: flex;
 		height: 120px;
@@ -54,10 +54,7 @@
 .card {
 	position: relative;
 	padding: 40px 48px;
-	backdrop-filter: blur(6px);
-	background: rgba(238, 237, 228, 0.02);
-	border: 2px solid $border-color;
-	border-radius: 8px;
+	@include element-decor;
 	&--main {
 		margin-top: -48px;
 	}
@@ -120,13 +117,72 @@
 		@include section-title;
 	}
 	&__info {
-		font-size: 29px;
-		line-height: 37px;
+		display: flex;
+		&-left {
+			min-width: 420px;
+			font-size: 29px;
+			line-height: 37px;
+		}
+		&-right {
+			display: flex;
+			flex-direction: column;
+			margin-left: 40px;
+		}
+		&-offer {
+			margin-bottom: 28px;
+			font-size: 56px;
+			line-height: 60px;
+			@include title-font;
+			color: $shady-main-color;
+			span {
+				color: $main-color;
+			}
+		}
+	}
+	&__form {
+		textarea,
+		input {
+			display: block;
+			position: relative;
+			width: 100%;
+			max-width: 570px;
+			margin-bottom: 24px;
+			padding: 32px 22px 14px;
+			line-height: 21px;
+			font-weight: inherit;
+			color: inherit;
+			@include element-decor;
+			&::placeholder {
+				/* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: $shady-main-color;
+				opacity: 1; /* Firefox */
+			}
+		}
+		a {
+			margin-bottom: 24px;
+			border-bottom: 1px solid $shady-main-color;
+			color: $shady-main-color;
+		}
+		button {
+			display: block;
+			width: 100%;
+			max-width: 570px;
+			padding: 26px;
+			color: inherit;
+			font-size: 24px;
+			font-weight: 700;
+			cursor: pointer;
+			@include element-decor;
+			@include transition;
+			&:hover {
+				border-color: $main-color;
+			}
+		}
 	}
 }
 
 .footer {
-	border-top: 2px solid $border-color;
+	border-top: 2px solid $shady-main-color;
 	&__inner {
 		display: flex;
 		padding: 160px 0 120px;

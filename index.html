@@ -229,20 +229,34 @@
 							Разработка web-приложений любой сложности под ключ
 						</div>
 						<div class="contacts__info-right">
-							Мы всегда ищем <span>новых членов,</span> которые привнесут в нашу
-							команду энергию, креативность и страсть.
-							<span>Как вы думаете,</span> у вас есть то, что нужно? Будем рады
-							видеть <span>ваше резюме</span>!
+							<div class="contacts__info-offer">
+								Мы всегда ищем <span>новых членов,</span> которые привнесут в
+								нашу команду энергию, креативность и страсть.
+								<span>Как вы думаете,</span> у вас есть то, что нужно? Будем
+								рады видеть <span>ваше резюме</span>!
+							</div>
+							<form class="contacts__form">
+								<input
+									type="text"
+									placeholder="ваша электронная почта"
+									required=""
+								/>
+								<input type="text" placeholder="ваше полное имя" required="" />
+								<textarea
+									cols="40"
+									rows="10"
+									aria-required="true"
+									aria-invalid="false"
+									placeholder="пару слов о вашем опыте"
+									name="job-experience"
+									value=""
+								></textarea>
+								<a href="#" class="contacts__form-file-upload"
+									>прикрепите ваше резюме</a
+								>
+								<button type="submit">Отправить</button>
+							</form>
 						</div>
-					</div>
-					<div class="contacts__box">
-						<a href="#" class="contacts__link"></a
-						><a href="#" class="contacts__link"></a
-						><a href="#" class="contacts__link"></a>
-						<form class="contacts__form">
-							<input type="text" placeholder="Enter email" required="" />
-							<button type="submit">Submit</button>
-						</form>
 					</div>
 				</div>
 			</div>
@@ -287,7 +301,6 @@
 		<!-- Setup and start animation! -->
 		<script>
 			var typed = new Typed('#typing-area', {
-				// strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
 				stringsElement: '#typed-text',
 				typeSpeed: 50,
 				loop: true,

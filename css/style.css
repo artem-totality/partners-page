@@ -184,8 +184,74 @@ body {
   font-weight: 700;
 }
 .contacts__info {
+  display: flex;
+}
+.contacts__info-left {
+  min-width: 420px;
   font-size: 29px;
   line-height: 37px;
+}
+.contacts__info-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.contacts__info-offer {
+  margin-bottom: 28px;
+  font-size: 56px;
+  line-height: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: rgba(250, 240, 181, 0.5);
+}
+.contacts__info-offer span {
+  color: #faf0b5;
+}
+.contacts__form textarea,
+.contacts__form input {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 570px;
+  margin-bottom: 24px;
+  padding: 32px 22px 14px;
+  line-height: 21px;
+  font-weight: inherit;
+  color: inherit;
+  backdrop-filter: blur(6px);
+  background: rgba(238, 237, 228, 0.02);
+  border: 2px solid rgba(250, 240, 181, 0.5);
+  border-radius: 8px;
+}
+.contacts__form textarea::placeholder,
+.contacts__form input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(250, 240, 181, 0.5);
+  opacity: 1;
+  /* Firefox */
+}
+.contacts__form a {
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(250, 240, 181, 0.5);
+  color: rgba(250, 240, 181, 0.5);
+}
+.contacts__form button {
+  display: block;
+  width: 100%;
+  max-width: 570px;
+  padding: 26px;
+  color: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  background: rgba(238, 237, 228, 0.02);
+  border: 2px solid rgba(250, 240, 181, 0.5);
+  border-radius: 8px;
+  transition: 300ms all ease-in-out;
+}
+.contacts__form button:hover {
+  border-color: #faf0b5;
 }
 
 .footer {
