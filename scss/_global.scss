@@ -88,7 +88,7 @@ body {
 
 @mixin selection {
 	&::selection {
-		color: $white;
+		color: $black;
 		background-color: $main-color;
 	}
 }
