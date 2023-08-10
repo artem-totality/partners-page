@@ -53,6 +53,7 @@ button {
 body {
 	font-family: $main-font;
 	font-size: 20px;
+	font-weight: 300;
 	color: $main-color;
 	background-color: $black;
 }
@@ -63,7 +64,7 @@ body {
 }
 
 @mixin section-title {
-	padding: 210px 0 56px;
+	padding: 170px 0 56px;
 	font-size: 64px;
 	@include title-font;
 }
