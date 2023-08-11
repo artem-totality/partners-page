@@ -8,6 +8,10 @@
 	animation: ease 200s alternate infinite;
 	pointer-events: none;
 	z-index: -1;
+	@media (max-width: 600px) {
+		width: 0.8vw;
+		height: 0.8vw;
+	}
 }
 .firefly::before,
 .firefly::after {

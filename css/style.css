@@ -77,6 +77,12 @@ body {
   pointer-events: none;
   z-index: -1;
 }
+@media (max-width: 600px) {
+  .firefly {
+    width: 0.8vw;
+    height: 0.8vw;
+  }
+}
 
 .firefly::before,
 .firefly::after {
