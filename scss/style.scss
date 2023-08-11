@@ -10,15 +10,17 @@
 	}
 	&__inner {
 		display: flex;
-		height: 120px;
+		min-height: 120px;
 		align-items: center;
 	}
 }
 
 .logo {
+	padding: 24px 0;
 	svg {
 		width: 55px;
 		height: 55px;
+		margin-left: -5px;
 		vertical-align: -36%;
 	}
 	&__title {
@@ -31,6 +33,7 @@
 .menu {
 	height: 100%;
 	margin-left: auto;
+	padding-top: 7px;
 	&__list {
 		display: flex;
 		height: 100%;
