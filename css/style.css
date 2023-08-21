@@ -1443,10 +1443,11 @@ body *::selection {
   margin-left: 40px;
 }
 
-.main__inner {
+.motto__inner {
   padding: 35px 0;
 }
-.main__title {
+.motto__title {
+  margin-bottom: -48px;
   font-size: 180px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -1459,9 +1460,6 @@ body *::selection {
   background: rgba(238, 237, 228, 0.02);
   border: 2px solid rgba(250, 240, 181, 0.5);
   border-radius: 8px;
-}
-.card--main {
-  margin-top: -48px;
 }
 
 .typing-area {
@@ -1638,15 +1636,13 @@ body *::selection {
     padding-bottom: 24px;
   }
 
-  .main__title {
+  .motto__title {
+    margin-bottom: -32px;
     font-size: 136px;
   }
 
   .card {
     padding: 30px 36px;
-  }
-  .card--main {
-    margin-top: -32px;
   }
 
   .typing-area {
@@ -1663,15 +1659,13 @@ body *::selection {
   }
 }
 @media (max-width: 900px) {
-  .main__title {
+  .motto__title {
+    margin-bottom: -26px;
     font-size: 90px;
   }
 
   .card {
     padding: 6px 16px;
-  }
-  .card--main {
-    margin-top: -26px;
   }
 
   .typing-area {
@@ -1741,15 +1735,13 @@ body *::selection {
     margin-left: 0;
   }
 
-  .main__title {
+  .motto__title {
+    margin-bottom: -16px;
     font-size: 52px;
   }
 
   .card {
     padding: 0;
-  }
-  .card--main {
-    margin-top: -16px;
   }
 
   .typing-area {

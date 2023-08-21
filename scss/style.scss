@@ -45,11 +45,12 @@
 	}
 }
 
-.main {
+.motto {
 	&__inner {
 		padding: 35px 0;
 	}
 	&__title {
+		margin-bottom: -48px;
 		font-size: 180px;
 		@include title-font;
 	}
@@ -59,9 +60,6 @@
 	position: relative;
 	padding: 40px 48px;
 	@include element-decor;
-	&--main {
-		margin-top: -48px;
-	}
 }
 
 .typing-area {
