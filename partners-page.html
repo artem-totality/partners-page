@@ -125,7 +125,142 @@
 				</div>
 			</div>
 		</header>
-
+		<section class="motto">
+			<div class="container">
+				<div class="motto__inner">
+					<div class="motto__title">Партнерам:</div>
+					<div class="card">
+						<div class="typing-area">
+							<span id="typing-area"></span>
+							<div class="typed-text" id="typed-text">
+								<p>
+									Присоединяйся, потому что только вместе можно добиться
+									большего!
+								</p>
+								<p>
+									Подключайся, потому что мы объединяем людей нацеленных на
+									изменение мира
+								</p>
+								<p>
+									Присоединяйся, потому что мы уважаем каждого члена команды,
+									как самих себя
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="roles">
+			<div class="container">
+				<div class="roles__inner">
+					<div class="roles__title">Роли:</div>
+					<div class="roles__content">
+						<div class="card">
+							<div class="role">
+								<div class="role__top">
+									<div class="role__img">
+										<img src="./images/cat1.jpg" alt="Дюймовочка" />
+									</div>
+									<div class="role__title">Дюймовочка</div>
+								</div>
+								<div class="role__info">
+									Крохотная девочка, героиня одноимённой сказки датского поэта,
+									путешественника и сказочника Х. К. Андерсена.
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="role">
+								<div class="role__top">
+									<div class="role__img">
+										<img src="./images/cat3.jpg" alt="Щелкунчик" />
+									</div>
+									<div class="role__title">Щелкунчик</div>
+								</div>
+								<div class="role__info">
+									Деревянная механическая кукла-карикатура, давно уже ставшая
+									символом Нового года и Рождества. Щелкунчик выглядит очень
+									необычно: большая голова по сравнению с тонкими ножками; плащ
+									на нем узкий и смешной, будто деревянный, а на голове одета
+									шапочка рудокопа.
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="role">
+								<div class="role__top">
+									<div class="role__img">
+										<img src="./images/cat6.jpg" alt="Серунчик" />
+									</div>
+									<div class="role__title">Серунчик</div>
+								</div>
+								<div class="role__info">
+									Это так называемый “caganer” — в переводе «какающий пастух»
+									или «серун». Это самый забавный и необычный рождественский
+									персонаж в Каталонии.
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="role">
+								<div class="role__top">
+									<div class="role__img">
+										<img src="./images/cat7.jpg" alt="Чебурашка" />
+									</div>
+									<div class="role__title">Чебурашка</div>
+								</div>
+								<div class="role__info">
+									Вымышленный зверёк с огромными ушами, большими глазами и
+									коричневой шерстью, ходящий на задних лапах.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts__inner">
+					<div class="contacts__title">Контакты:</div>
+					<div class="contacts__info">
+						<div class="contacts__info-left">
+							Разработка web&#8209;приложений любой сложности под ключ
+						</div>
+						<div class="contacts__info-right">
+							<div class="contacts__info-offer">
+								Мы всегда ищем <span>новых членов,</span> которые привнесут в
+								нашу команду энергию, креативность и страсть.
+								<span>Как вы думаете,</span> у вас есть то, что нужно? Будем
+								рады видеть <span>ваше резюме</span>!
+							</div>
+							<form class="contacts__form">
+								<input
+									type="text"
+									placeholder="ваша электронная почта"
+									required=""
+								/>
+								<input type="text" placeholder="ваше полное имя" required="" />
+								<textarea
+									cols="40"
+									rows="10"
+									aria-required="true"
+									aria-invalid="false"
+									placeholder="пару слов о вашем опыте"
+									name="job-experience"
+									value=""
+								></textarea>
+								<a href="#" class="contacts__form-file-upload"
+									>прикрепите ваше резюме</a
+								>
+								<button type="submit">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__inner">
@@ -178,5 +313,18 @@
 				</defs>
 			</svg>
 		</div>
+
+		<!-- Load library from the CDN -->
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+		<!-- Setup and start animation! -->
+		<script>
+			var typed = new Typed('#typing-area', {
+				stringsElement: '#typed-text',
+				typeSpeed: 90,
+				backSpeed: 25,
+				loop: true,
+				startDelay: 1000,
+			});
+		</script>
 	</body>
 </html>
