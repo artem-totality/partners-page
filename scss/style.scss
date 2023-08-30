@@ -3,6 +3,7 @@
 @import 'global';
 @import 'space';
 
+//--- partners page start ---//
 .header {
 	border-bottom: 2px solid $shady-main-color;
 	&__inner {
@@ -58,6 +59,7 @@
 
 .card {
 	position: relative;
+	height: 100%;
 	padding: 40px 48px;
 	@include element-decor;
 }
@@ -82,6 +84,7 @@
 		gap: 24px;
 		.card {
 			width: calc(50% - 12px);
+			height: auto;
 			min-height: 360px;
 		}
 	}
@@ -96,13 +99,12 @@
 	&__img img {
 		width: 64px;
 		height: 64px;
+		margin-right: 16px;
 		border-radius: 50%;
 		overflow: hidden;
 	}
 	&__title {
-		margin-left: 16px;
-		font-size: 36px;
-		@include title-font;
+		@include section-subtitle;
 	}
 	&__info {
 		font-size: 20px;
@@ -110,7 +112,7 @@
 	}
 }
 
-.contacts {
+.partners-contacts {
 	&__inner {
 		padding: 35px 0 120px;
 	}
@@ -121,8 +123,7 @@
 		display: flex;
 		&-left {
 			min-width: 420px;
-			font-size: 29px;
-			line-height: 37px;
+			@include section-info;
 		}
 		&-right {
 			display: flex;
@@ -165,19 +166,7 @@
 			color: $shady-main-color;
 		}
 		button {
-			display: block;
-			width: 100%;
-			max-width: 570px;
-			padding: 26px;
-			color: inherit;
-			font-size: 24px;
-			font-weight: 700;
-			cursor: pointer;
-			@include element-decor;
-			@include transition;
-			&:hover {
-				border-color: $main-color;
-			}
+			@include button;
 		}
 	}
 }
@@ -204,5 +193,74 @@
 		}
 	}
 }
+//--- partners page end ---//
+
+//--- main page start ---//
+.contacts {
+	&__inner {
+		padding: 35px 0 120px;
+	}
+	&__title {
+		@include section-title;
+	}
+	&__info {
+		max-width: 480px;
+		margin-bottom: 28px;
+		@include section-info;
+	}
+	&__main {
+		display: flex;
+		gap: 24px;
+	}
+	&__links,
+	&__form {
+		width: 50%;
+	}
+	&__links-inner {
+		display: flex;
+		padding: 24px 0;
+		flex-direction: column;
+		align-items: start;
+		font-size: 29px;
+	}
+	&__form {
+		&-text {
+			margin-bottom: 24px;
+			@include section-subtitle;
+		}
+		input {
+			display: block;
+			position: relative;
+			width: 100%;
+			max-width: 570px;
+			margin-bottom: 24px;
+			padding: 32px 22px 14px;
+			line-height: 21px;
+			font-weight: inherit;
+			color: inherit;
+			@include element-decor;
+			&::placeholder {
+				/* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: $shady-main-color;
+				opacity: 1; /* Firefox */
+			}
+		}
+		button {
+			margin-bottom: 24px;
+			@include button;
+		}
+	}
+}
+
+.link {
+	margin-bottom: 24px;
+	svg {
+		width: 27px;
+		height: 27px;
+		margin-right: 11px;
+		vertical-align: -14%;
+	}
+}
+//--- main page end ---//
 
 @import 'media';

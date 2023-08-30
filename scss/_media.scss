@@ -24,7 +24,7 @@
 		padding: 42px 36px;
 		font-size: 66px;
 	}
-	.contacts {
+	.partners-contacts {
 		&__info {
 			&-left {
 				min-width: 400px;
@@ -56,13 +56,13 @@
 		&__img img {
 			width: 42px;
 			height: 42px;
+			margin-right: 6px;
 		}
 		&__title {
-			margin-left: 6px;
-			font-size: 28px;
+			font-size: 24px;
 		}
 	}
-	.contacts {
+	.partners-contacts {
 		&__inner {
 			padding-bottom: 80px;
 		}
@@ -86,6 +86,18 @@
 			div {
 				width: calc(50% - 12px);
 			}
+		}
+	}
+	.contacts {
+		&__main {
+			flex-direction: column;
+		}
+		&__links,
+		&__form {
+			width: 100%;
+		}
+		&__form-inner {
+			padding: 24px 0;
 		}
 	}
 }
@@ -141,7 +153,7 @@
 	.role {
 		padding: 12px;
 	}
-	.contacts {
+	.partners-contacts {
 		&__info {
 			flex-direction: column;
 			&-left {
@@ -163,6 +175,24 @@
 			div {
 				width: 100%;
 			}
+		}
+	}
+	.contacts {
+		&__links,
+		&__form {
+			&-inner {
+				padding: 30px 16px;
+			}
+		}
+		&__links-inner {
+			font-size: 25px;
+		}
+	}
+	.link {
+		svg {
+			width: 23px;
+			height: 23px;
+			margin-right: 5px;
 		}
 	}
 }
