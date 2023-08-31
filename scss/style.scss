@@ -108,7 +108,6 @@
 		@include section-subtitle;
 	}
 	&__info {
-		font-size: 20px;
 		line-height: 30px;
 	}
 }
@@ -207,7 +206,7 @@
 		text-align: center;
 	}
 	&__title {
-		@include section-title;
+		@include section-liquid-title;
 	}
 	&__divider {
 		width: 66%;
@@ -235,6 +234,45 @@
 	align-items: center;
 }
 
+.promo {
+	&__inner {
+		padding: 35px 0;
+	}
+	&__title {
+		@include section-liquid-title;
+	}
+	&__info {
+		max-width: 610px;
+		@include section-info;
+	}
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		gap: $gap;
+	}
+	&__item {
+		width: calc(50% - 12px);
+		&-top {
+			display: flex;
+			min-height: 124px;
+			margin-bottom: $step;
+		}
+		svg {
+			flex: 0 0 64px;
+			height: 64px;
+			margin-right: 6px;
+		}
+		&-title {
+			@include section-subtitle;
+		}
+		&-text {
+			line-height: 30px;
+		}
+	}
+}
+//--- main page end ---//
+
+//--- contacts page start ---//
 .contacts {
 	&__inner {
 		padding: 35px 0 120px;
@@ -244,7 +282,6 @@
 	}
 	&__info {
 		max-width: 480px;
-		margin-bottom: 28px;
 		@include section-info;
 	}
 	&__main {
@@ -300,6 +337,6 @@
 		vertical-align: -14%;
 	}
 }
-//--- main page end ---//
+//--- contacts page end ---//
 
 @import 'media';

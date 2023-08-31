@@ -110,6 +110,17 @@
 			flex-direction: column-reverse;
 		}
 	}
+	.promo {
+		&__item {
+			&-top {
+				min-height: 85px;
+			}
+			svg {
+				flex-basis: 42px;
+				height: 42px;
+			}
+		}
+	}
 }
 
 @media (max-width: 600px) {
@@ -205,9 +216,9 @@
 			margin-right: 5px;
 		}
 	}
-	.main {
-		&__title {
-			font-size: 40px;
+	.promo {
+		&__item {
+			width: 100%;
 		}
 	}
 }
