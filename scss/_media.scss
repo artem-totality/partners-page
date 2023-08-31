@@ -7,7 +7,7 @@
 	.menu {
 		padding: 0;
 		&__item {
-			padding-bottom: 24px;
+			padding-bottom: $gap;
 		}
 	}
 	.motto {
@@ -32,6 +32,11 @@
 			&-offer {
 				font-size: 52px;
 			}
+		}
+	}
+	.main {
+		&__inner {
+			padding: 35px 0;
 		}
 	}
 }
@@ -72,7 +77,7 @@
 				font-size: 25px;
 			}
 			&-right {
-				margin-left: 24px;
+				margin-left: $gap;
 			}
 			&-offer {
 				font-size: 46px;
@@ -82,7 +87,7 @@
 	.footer {
 		&__inner {
 			padding: 100px 0 80px;
-			gap: 24px;
+			gap: $gap;
 			div {
 				width: calc(50% - 12px);
 			}
@@ -97,7 +102,12 @@
 			width: 100%;
 		}
 		&__form-inner {
-			padding: 24px 0;
+			padding: $gap 0;
+		}
+	}
+	.main {
+		&__inner {
+			flex-direction: column-reverse;
 		}
 	}
 }
@@ -157,7 +167,7 @@
 		&__info {
 			flex-direction: column;
 			&-left {
-				margin-bottom: 24px;
+				margin-bottom: $gap;
 				font-size: 24px;
 			}
 			&-right {
@@ -193,6 +203,11 @@
 			width: 23px;
 			height: 23px;
 			margin-right: 5px;
+		}
+	}
+	.main {
+		&__title {
+			font-size: 40px;
 		}
 	}
 }

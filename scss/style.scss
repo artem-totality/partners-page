@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'scroll';
 @import 'global';
+@import 'clock';
 @import 'space';
 
 //--- partners page start ---//
@@ -14,7 +15,7 @@
 }
 
 .logo {
-	padding: 24px 0;
+	padding: $gap 0;
 	svg {
 		width: 55px;
 		height: 55px;
@@ -81,7 +82,7 @@
 	&__content {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 24px;
+		gap: $gap;
 		.card {
 			width: calc(50% - 12px);
 			height: auto;
@@ -148,7 +149,7 @@
 			position: relative;
 			width: 100%;
 			max-width: 570px;
-			margin-bottom: 24px;
+			margin-bottom: $gap;
 			padding: 32px 22px 14px;
 			line-height: 21px;
 			font-weight: inherit;
@@ -161,7 +162,7 @@
 			}
 		}
 		a {
-			margin-bottom: 24px;
+			margin-bottom: $gap;
 			border-bottom: 1px solid $shady-main-color;
 			color: $shady-main-color;
 		}
@@ -196,6 +197,44 @@
 //--- partners page end ---//
 
 //--- main page start ---//
+.main {
+	min-height: calc(100vh - 120px);
+	&__inner {
+		display: flex;
+	}
+	&__content {
+		min-width: 50%;
+		text-align: center;
+	}
+	&__title {
+		@include section-title;
+	}
+	&__divider {
+		width: 66%;
+		margin: 0 auto;
+		border-bottom: 2px solid $shady-main-color;
+	}
+	&__subtitle {
+		margin: $gap 0;
+		@include section-subtitle;
+		span {
+			color: $shady-main-color;
+		}
+	}
+	&__link {
+		margin: $gap 0;
+		@include button;
+		width: 192px;
+		display: inline-block;
+	}
+}
+
+.clock {
+	display: flex;
+	flex: 1 1 360px;
+	align-items: center;
+}
+
 .contacts {
 	&__inner {
 		padding: 35px 0 120px;
@@ -210,7 +249,7 @@
 	}
 	&__main {
 		display: flex;
-		gap: 24px;
+		gap: $gap;
 	}
 	&__links,
 	&__form {
@@ -218,14 +257,14 @@
 	}
 	&__links-inner {
 		display: flex;
-		padding: 24px 0;
+		padding: $gap 0;
 		flex-direction: column;
 		align-items: start;
 		font-size: 29px;
 	}
 	&__form {
 		&-text {
-			margin-bottom: 24px;
+			margin-bottom: $gap;
 			@include section-subtitle;
 		}
 		input {
@@ -233,7 +272,7 @@
 			position: relative;
 			width: 100%;
 			max-width: 570px;
-			margin-bottom: 24px;
+			margin-bottom: $gap;
 			padding: 32px 22px 14px;
 			line-height: 21px;
 			font-weight: inherit;
@@ -246,14 +285,14 @@
 			}
 		}
 		button {
-			margin-bottom: 24px;
+			margin-bottom: $gap;
 			@include button;
 		}
 	}
 }
 
 .link {
-	margin-bottom: 24px;
+	margin-bottom: $gap;
 	svg {
 		width: 27px;
 		height: 27px;

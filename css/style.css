@@ -53,10 +53,10 @@ body {
   font-size: 20px;
   font-weight: 300;
   color: #faf0b5;
-  background-color: #000000;
+  background-color: #000;
 }
 body *::selection {
-  color: #000000;
+  color: #000;
   background-color: #faf0b5;
 }
 
@@ -68,6 +68,223 @@ body *::selection {
 
 .svg-sprite {
   display: none;
+}
+
+.clock__root {
+  cursor: pointer;
+}
+.clock__st0 {
+  fill: url(#SVGID_1_);
+}
+.clock__st1 {
+  fill: url(#SVGID_2_);
+}
+.clock__st2 {
+  fill: url(#SVGID_3_);
+}
+.clock__st3 {
+  fill: url(#SVGID_4_);
+}
+.clock__st4 {
+  fill: url(#SVGID_5_);
+}
+.clock__st5 {
+  fill: none;
+  stroke: url(#SVGID_6_);
+  stroke-miterlimit: 10;
+  stroke-width: 0.5;
+}
+.clock__st6 {
+  fill: url(#SVGID_7_);
+}
+.clock__st7 {
+  fill: url(#SVGID_8_);
+}
+.clock__st8 {
+  fill: url(#SVGID_9_);
+}
+.clock__st9 {
+  fill: url(#SVGID_10_);
+}
+.clock__st10 {
+  fill: url(#SVGID_11_);
+}
+.clock__st11 {
+  fill: url(#SVGID_12_);
+}
+.clock__st12 {
+  fill: none;
+  stroke: url(#SVGID_13_);
+  stroke-dasharray: 5.49;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5;
+}
+.clock__st13 {
+  fill: url(#SVGID_14_);
+}
+.clock__st14 {
+  fill: url(#SVGID_15_);
+}
+.clock__st15 {
+  fill: url(#SVGID_16_);
+}
+.clock__st16 {
+  fill: none;
+  stroke: url(#SVGID_17_);
+  stroke-width: 0.5;
+  stroke-miterlimit: 10;
+}
+.clock__st17 {
+  fill: none;
+  stroke: url(#SVGID_18_);
+  stroke-width: 0.5;
+  stroke-miterlimit: 10;
+}
+.clock__st18 {
+  fill: none;
+  stroke: url(#SVGID_19_);
+  stroke-width: 0.5;
+  stroke-miterlimit: 10;
+}
+.clock__st19 {
+  fill: url(#SVGID_20_);
+}
+.clock__st20 {
+  fill: url(#SVGID_21_);
+}
+.clock__st21 {
+  fill: url(#SVGID_22_);
+}
+.clock__st22 {
+  fill: url(#SVGID_23_);
+}
+.clock__st23 {
+  fill: url(#SVGID_24_);
+}
+.clock__st24 {
+  fill: url(#SVGID_25_);
+}
+.clock__st25 {
+  fill: url(#SVGID_26_);
+}
+.clock__st26 {
+  fill: url(#SVGID_27_);
+}
+.clock__st27 {
+  fill: url(#SVGID_28_);
+}
+.clock__st28 {
+  fill: url(#SVGID_29_);
+}
+.clock__st29 {
+  fill: url(#SVGID_30_);
+}
+.clock__st30 {
+  fill: url(#SVGID_31_);
+}
+.clock__st31 {
+  fill: url(#SVGID_32_);
+}
+.clock__st32 {
+  fill: url(#SVGID_33_);
+}
+.clock__st33 {
+  fill: url(#SVGID_34_);
+}
+.clock__st34 {
+  fill: url(#SVGID_35_);
+}
+.clock__st35 {
+  fill: url(#SVGID_36_);
+}
+.clock__st36 {
+  fill: url(#SVGID_37_);
+}
+.clock__st37 {
+  fill: url(#SVGID_38_);
+}
+.clock__st38 {
+  fill: url(#SVGID_39_);
+}
+.clock__st39 {
+  fill: url(#SVGID_40_);
+}
+.clock__st40 {
+  fill: url(#SVGID_41_);
+}
+.clock__st41 {
+  fill: url(#SVGID_42_);
+}
+.clock__st42 {
+  fill: url(#SVGID_43_);
+}
+.clock__st43 {
+  fill: url(#SVGID_44_);
+}
+.clock__st44 {
+  fill: url(#SVGID_45_);
+}
+.clock__st45 {
+  fill: url(#SVGID_46_);
+}
+.clock__st46 {
+  fill: url(#SVGID_47_);
+}
+.clock__st47 {
+  fill: url(#SVGID_48_);
+}
+.clock__st48 {
+  fill: url(#SVGID_49_);
+}
+.clock__st49 {
+  fill: url(#SVGID_50_);
+}
+.clock__st50 {
+  fill: url(#SVGID_51_);
+}
+.clock__st51 {
+  fill: url(#SVGID_52_);
+}
+.clock__st52 {
+  fill: url(#SVGID_53_);
+}
+.clock__st53 {
+  fill: url(#SVGID_54_);
+}
+.clock__st54 {
+  fill: url(#SVGID_55_);
+}
+.clock__st55 {
+  fill: url(#SVGID_56_);
+}
+.clock__st56 {
+  fill: url(#SVGID_57_);
+}
+.clock__st57 {
+  fill: url(#SVGID_58_);
+}
+.clock__st61 {
+  fill: url(#SVGID_62_);
+}
+.clock__st62 {
+  fill: url(#SVGID_63_);
+}
+.clock__st63 {
+  fill: url(#SVGID_64_);
+}
+.clock__st64 {
+  fill: url(#SVGID_65_);
+}
+.clock__st65 {
+  fill: url(#SVGID_66_);
+}
+.clock__title {
+  fill: url(#text);
+  font: bold 10px sans-serif;
+}
+.clock__value {
+  fill: url(#text);
+  font: bold 15px sans-serif;
 }
 
 .firefly {
@@ -1631,6 +1848,75 @@ body *::selection {
   vertical-align: -36%;
 }
 
+.main {
+  min-height: calc(100vh - 120px);
+}
+.main__inner {
+  display: flex;
+}
+.main__content {
+  min-width: 50%;
+  text-align: center;
+}
+.main__title {
+  padding: 170px 0 56px;
+  font-size: 64px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 1199px) {
+  .main__title {
+    padding: 80px 0 48px;
+    font-size: 60px;
+  }
+}
+.main__divider {
+  width: 66%;
+  margin: 0 auto;
+  border-bottom: 2px solid rgba(250, 240, 181, 0.5);
+}
+.main__subtitle {
+  margin: 24px 0;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 900px) {
+  .main__subtitle {
+    font-size: 24px;
+  }
+}
+.main__subtitle span {
+  color: rgba(250, 240, 181, 0.5);
+}
+.main__link {
+  margin: 24px 0;
+  display: block;
+  width: 100%;
+  max-width: 570px;
+  padding: 26px;
+  color: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  background: rgba(238, 237, 228, 0.02);
+  border: 2px solid rgba(250, 240, 181, 0.5);
+  border-radius: 8px;
+  transition: 300ms all ease-in-out;
+  width: 192px;
+  display: inline-block;
+}
+.main__link:hover {
+  border-color: #faf0b5;
+}
+
+.clock {
+  display: flex;
+  flex: 1 1 360px;
+  align-items: center;
+}
+
 .contacts__inner {
   padding: 35px 0 120px;
 }
@@ -1724,7 +2010,7 @@ body *::selection {
 .link svg {
   width: 27px;
   height: 27px;
-  margin-right: 5px;
+  margin-right: 11px;
   vertical-align: -14%;
 }
 
@@ -1760,6 +2046,10 @@ body *::selection {
   }
   .partners-contacts__info-offer {
     font-size: 52px;
+  }
+
+  .main__inner {
+    padding: 35px 0;
   }
 }
 @media (max-width: 900px) {
@@ -1820,6 +2110,10 @@ body *::selection {
   }
   .contacts__form-inner {
     padding: 24px 0;
+  }
+
+  .main__inner {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 600px) {
@@ -1908,6 +2202,10 @@ body *::selection {
   .link svg {
     width: 23px;
     height: 23px;
-    margin-right: 3px;
+    margin-right: 5px;
+  }
+
+  .main__title {
+    font-size: 40px;
   }
 }
