@@ -1846,7 +1846,7 @@ body::before {
 }
 .footer__inner {
   display: flex;
-  padding: 160px 0 120px;
+  padding: 120px 0 120px;
   flex-wrap: wrap;
   gap: 9px 40px;
   align-items: center;
@@ -2061,6 +2061,50 @@ body::before {
 }
 .chess__info3 {
   grid-column: 2 / 4;
+}
+
+.ufo__inner {
+  padding: 35px 0;
+  text-align: center;
+}
+.ufo__img {
+  margin-top: 24px;
+}
+.ufo__img svg {
+  width: 300px;
+  height: 300px;
+}
+.ufo__subtitle {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 900px) {
+  .ufo__subtitle {
+    font-size: 24px;
+  }
+}
+.ufo__link {
+  margin: 24px 0;
+  padding: 0 24px;
+  display: block;
+  width: 100%;
+  max-width: 570px;
+  padding: 26px;
+  color: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  background: rgba(238, 237, 228, 0.02);
+  border: 2px solid rgba(250, 240, 181, 0.5);
+  border-radius: 8px;
+  transition: 300ms all ease-in-out;
+  width: auto;
+  display: inline-block;
+}
+.ufo__link:hover {
+  border-color: #faf0b5;
 }
 
 .contacts__inner {
