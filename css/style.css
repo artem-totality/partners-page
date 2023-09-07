@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1745,6 +1746,11 @@ body::before {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+@media (max-width: 1199px) {
+  .role__title {
+    font-size: 30px;
+  }
+}
 @media (max-width: 900px) {
   .role__title {
     font-size: 24px;
@@ -1900,6 +1906,11 @@ body::before {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+@media (max-width: 1199px) {
+  .main__subtitle {
+    font-size: 30px;
+  }
+}
 @media (max-width: 900px) {
   .main__subtitle {
     font-size: 24px;
@@ -1985,6 +1996,11 @@ body::before {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+@media (max-width: 1199px) {
+  .promo__item-title {
+    font-size: 30px;
+  }
+}
 @media (max-width: 900px) {
   .promo__item-title {
     font-size: 24px;
@@ -2025,6 +2041,11 @@ body::before {
   font-size: 36px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+@media (max-width: 1199px) {
+  .chess__subtitle {
+    font-size: 30px;
+  }
 }
 @media (max-width: 900px) {
   .chess__subtitle {
@@ -2079,6 +2100,11 @@ body::before {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+@media (max-width: 1199px) {
+  .ufo__subtitle {
+    font-size: 30px;
+  }
+}
 @media (max-width: 900px) {
   .ufo__subtitle {
     font-size: 24px;
@@ -2105,6 +2131,131 @@ body::before {
 }
 .ufo__link:hover {
   border-color: #faf0b5;
+}
+
+.clients__inner {
+  padding: 35px 0;
+}
+.clients__title {
+  padding: 120px 0 56px;
+  font-size: 64px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 1199px) {
+  .clients__title {
+    padding: 80px 0 48px;
+    font-size: 60px;
+  }
+}
+.clients__link {
+  margin: 36px auto 24px;
+  padding: 0 24px;
+  display: block;
+  width: 100%;
+  max-width: 570px;
+  padding: 26px;
+  color: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  background: rgba(238, 237, 228, 0.02);
+  border: 2px solid rgba(250, 240, 181, 0.5);
+  border-radius: 8px;
+  transition: 300ms all ease-in-out;
+  width: 160px;
+}
+.clients__link:hover {
+  border-color: #faf0b5;
+}
+
+.clients-products {
+  text-align: center;
+}
+.clients-products__subtitle {
+  margin: 24px 0 36px;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 1199px) {
+  .clients-products__subtitle {
+    font-size: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .clients-products__subtitle {
+    font-size: 24px;
+  }
+}
+.clients-products__info {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  font-size: 29px;
+  line-height: 37px;
+}
+.clients-products__items {
+  display: flex;
+  padding-bottom: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.clients-product {
+  width: calc(33.3% - 16px);
+}
+.clients-product__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.clients-product__img svg {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 12px;
+}
+.clients-product__title {
+  margin-bottom: 36px;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 33px;
+  min-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1199px) {
+  .clients-product__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .clients-product__title {
+    font-size: 24px;
+  }
+}
+.clients-product__info {
+  flex-grow: 1;
+  margin-bottom: 36px;
+}
+.clients-product__price {
+  margin-bottom: 36px;
+  font-size: 29px;
+  line-height: 37px;
+  margin-bottom: 24px;
+}
+.clients-product__price::before {
+  content: 'от';
+  font-size: 20px;
+  margin-right: 7px;
+}
+.clients-product__price::after {
+  content: '\20BD';
+  margin-left: 5px;
 }
 
 .contacts__inner {
@@ -2147,6 +2298,11 @@ body::before {
   font-size: 36px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+@media (max-width: 1199px) {
+  .contacts__form-text {
+    font-size: 30px;
+  }
 }
 @media (max-width: 900px) {
   .contacts__form-text {
@@ -2344,6 +2500,10 @@ body::before {
     flex-basis: 42px;
     height: 42px;
   }
+
+  .clients-product {
+    width: calc(50% - 12px);
+  }
 }
 @media (max-width: 600px) {
   .logo {
@@ -2442,5 +2602,14 @@ body::before {
     display: flex;
     flex-direction: column;
     gap: 24px;
+  }
+
+  .clients-products__items {
+    display: block;
+  }
+
+  .clients-product {
+    width: 100%;
+    margin-bottom: 24px;
   }
 }

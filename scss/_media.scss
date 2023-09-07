@@ -151,6 +151,9 @@
 			}
 		}
 	}
+	.clients-product {
+		width: calc(50% - 12px);
+	}
 }
 
 @media (max-width: 600px) {
@@ -255,5 +258,14 @@
 		display: flex;
 		flex-direction: column;
 		gap: $gap;
+	}
+	.clients-products {
+		&__items {
+			display: block;
+		}
+	}
+	.clients-product {
+		width: 100%;
+		margin-bottom: $gap;
 	}
 }
