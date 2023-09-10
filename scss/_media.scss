@@ -154,6 +154,18 @@
 	.clients-product {
 		width: calc(50% - 12px);
 	}
+	.dev {
+		&__inner {
+			display: flex;
+			flex-direction: column;
+		}
+		&__profile {
+			align-self: center;
+		}
+		&__controls {
+			padding: $half-gap;
+		}
+	}
 }
 
 @media (max-width: 600px) {
